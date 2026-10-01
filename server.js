@@ -31,6 +31,8 @@ if (cluster.isPrimary) {
       count += i;
     }
 
+    console.log('loop completed...');
+
     const duration = (performance.now() - startTime).toFixed(3);
 
     res.json({
